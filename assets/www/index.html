@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+
+<html>
+	<head> 
+    	<title>App Misura</title> 
+    	<script type="text/javascript" src="js/cordova-2.9.0.js"></script> 
+    	<link rel="stylesheet" type="text/css" href="js/imgareaselect-v1.0.0-rc.1/distfiles/css/imgareaselect-default.css">
+    	<script type="text/javascript" src="js/imgareaselect-v1.0.0-rc.1/distfiles/scripts/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/imgareaselect-v1.0.0-rc.1/jquery.imgareaselect.min.js"></script>
+    	<script type="text/javascript" src="js/feedreader.js"></script>
+    	<link rel="stylesheet" type="text/css" href="css/index.css">
+    	<script type="text/javascript" src="js/index.js"></script>
+  	</head> 
+  	<body>
+    
+	    <div id="header">
+	      	<img id="logo" src="img/logo.png">
+	      	<h1>App Misura</h1>
+	    </div><br>
+	    
+	    <div id="login">
+	    	<form name="loginForm" action="javascript: login()">
+	    		<fieldset>
+	    			<legend>Login</legend>
+	    			<input type="email" name="mail" placeholder="utente@dominio.com*" autocomplete="on" required><br><br>
+	    			<input type="password" name="pwd" placeholder="Password*" required><br><br>
+	    			<input type="submit" value="Login">
+	    		</fieldset>
+	    	</form>
+	    	<br><button id="btnRegistrazione">Registrati</button>
+	    </div>
+	    
+	    <div id="registrazione">
+	    	<form name="registrazioneForm" action="javascript: registrazione()">
+	    		<fieldset>
+	    			<legend>Registrazione</legend>
+		    		<input type="text" name="nome" placeholder="Nome*" autocomplete="on" required><br><br>
+		    		<input type="text" name="cognome" placeholder="Cognome*" autocomplete="on" required><br><br>
+		    		<input type="email" name="email" placeholder="utente@dominio.com*" autocomplete="on" required><br><br>
+		    		<input type="text" name="indirizzo" placeholder="Indirizzo*" autocomplete="on" required><br><br>
+		    		<input type="text" name="cap" placeholder="CAP*" autocomplete="on" required><br><br>
+		    		<input type="text" name="citta" placeholder="Citta'*" autocomplete="on" required><br><br>
+		    		<input type="text" name="provincia" placeholder="Provincia*" autocomplete="on" required><br><br>
+		    		<input type="text" name="codiceAgente" placeholder="Codice agente" autocomplete="on"><br><br>
+		    		<input type="password" name="password" placeholder="Password*" required><br><br>
+		    		<input type="submit" value="Invia">
+		    	</fieldset>
+	    	</form>
+	    </div>
+	    
+	    <div id="home">
+	    	<div style="text-align: center;">
+	    		<h2>News</h2>
+	    	</div>
+	    	<div id="boxnews">
+	    	</div><br><br>
+	    	<div style="text-align: center;">
+	    		<button id="btnNuovoPreventivo">Crea nuovo preventivo</button>
+	    	</div>
+	    </div>
+	    
+	    <div id="sceltaPattern">
+	      	<h4>Scegli con cosa effettuare le misurazioni:</h4>
+	      	<input type="radio" name="pattern" value="patente" checked="checked"> Patente o tessera sanitaria<br>
+	      	<input type="radio" name="pattern" value="pacchetto"> Pacchetto di sigarette da venti<br>
+	      	<input type="radio" name="pattern" value="cdRom"> CD-ROM<br>
+	      	<input type="radio" name="pattern" value="foglioA4"> Foglio A4<br><br>
+	      	<div style="text-align: center;">
+	      		<button id="btnFatto">Fatto</button>
+			</div>
+		</div>
+	    
+	    <div id="sceltaFoto">
+	      	<button id="btnFotocamera">Fotocamera</button><br><br>
+	      	<button id="btnGalleria">Galleria</button><br><br>
+	    </div>
+	    
+	    <div id="misurazioni">
+	      	<img id="image" src=""><br>
+	      	<button id="btnPatternSelezionato">Pattern selezionato</button>
+	      	<button id="btnOggettoSelezionato">Oggetto selezionato</button>
+	    </div>
+	    
+	    <div id="risultati">
+	      	<h3>L'oggetto ha le seguenti misure:</h3>
+	      	<label id="w">Larghezza</label><br><br> 
+	      	<label id="h">Altezza</label><br><br>
+	      	<label>Colore</label><br><br>
+	      	<label>Optional</label><br><br>
+	      	<input type="text" name="note" placeholder="Note"><br><br>
+	      	<label>Costo</label><br><br>
+	      	<div style="text-align: center;">
+	      		<button id="btnNuovaMisura">Nuova misura</button><br><br>
+	      		<button id="btnChiudiPreventivo">Salva e invia preventivo</button>
+	      	</div>
+	    </div>
+    
+	</body> 
+</html>

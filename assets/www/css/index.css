@@ -1,0 +1,61 @@
+button, input {
+	border-radius: 10px 10px 10px 10px;
+}
+
+button, input[type="submit"] {
+	background-color: #99CCFF;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	background-color: #F0F0F0;
+}
+
+#header { 
+	border: 1px solid #000;
+	text-align: center; 
+	background-color: #F0F0F0;
+}
+    	
+#logo { 
+	float: left; 
+	margin: 10px; 
+	width: 70px; 
+	height: 63px; 
+}
+ 
+#login {
+	display: block;
+	text-align: center; 
+} 
+
+#registrazione {
+	display: none;
+	text-align: center; 
+}
+
+#home {
+	display: none;
+}
+
+#sceltaPattern {
+	display: none;
+}
+
+#sceltaFoto { 
+	display: none; 
+	text-align: center;
+}
+
+#misurazioni {
+	display:none;
+	text-align: center;
+}
+
+#image {  
+	max-width: 100%; 
+	max-height: 100%; 
+}
+
+#risultati { 
+	display: none; 
+}
